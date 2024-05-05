@@ -1,4 +1,5 @@
 syntax = "proto3";
+package vslab2.src.grpc;
 
 message Log {
     int32 row_number = 1;
@@ -12,9 +13,13 @@ message Logs {
 
 message Empty {}
 
+message User {
+    string user_id = 1;
+}
+
 service LogService {
     rpc AddLog(stream Log) returns (Empty);
     rpc GetLog(Empty) returns (Logs);
-    rpc ListenLog(Empty) returns (stream Log);
-    rpc UnlistenLog(Empty) returns (Empty);
+    rpc ListenLog(User) returns (stream Log);
+    rpc UnlistenLog(User) returns (Empty);
 }
