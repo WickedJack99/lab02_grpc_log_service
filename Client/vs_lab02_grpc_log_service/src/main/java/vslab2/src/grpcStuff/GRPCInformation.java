@@ -17,6 +17,8 @@ public class GRPCInformation {
                 .usePlaintext()
                 .build();
         stub = LogServiceGrpc.newStub(channel);
+        System.out.println("-------------------------------------------------");
+        System.out.println("Connection to server succesful.");
     }
 
     public LogServiceGrpc.LogServiceStub getStub() {

@@ -31,7 +31,7 @@ public class InputThread extends Thread{
         grpcInformation.initializeStub(clientInformation.getServerIP(), clientInformation.getServerPort());
 
         while (inputThreadRunning) {
-            System.out.println("-----------------------------------------------");
+            System.out.println("-------------------------------------------------");
             System.out.println("Enter command:");
             String inputString = null;
             try {

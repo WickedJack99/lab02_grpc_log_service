@@ -6,10 +6,10 @@
 
     <groupId>vslab2.src</groupId>
     <artifactId>labor2vs</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-            <dependency>
+        <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-netty-shaded</artifactId>
             <version>1.63.0</version>

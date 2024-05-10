@@ -17,7 +17,8 @@ public class CommandFactory {
 
         switch (command) {
             case (Constants.ADD_LOG): {
-                return new CommandAddLog(commandStringParts[Constants.LOG_TEXT], clientInformation, grpcInformation);
+                String text = commandString.substring(Constants.GET_LOG.length() + 1, commandString.length());
+                return new CommandAddLog(text, clientInformation, grpcInformation);
             }
             
             case (Constants.GET_LOG): {

@@ -13,13 +13,13 @@ public class AddLogEmptyResponseObserver implements StreamObserver<Empty> {
 
     @Override
     public void onError(Throwable t) {
-        System.out.println("-----------------------------------------------");
+        System.out.println("-------------------------------------------------");
         System.out.println("Error at AddLogEmptyResponseObserver.\n" + t.toString());
     }
 
     @Override
     public void onCompleted() {
-        System.out.println("-----------------------------------------------");
+        System.out.println("-------------------------------------------------");
         System.out.println("AddLogEmptyResponseObserver closed.");
     }
     
